@@ -1,5 +1,7 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
+import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle } from '@ionic/react';
+
 import './Tab2.css';
 
 const Tab2: React.FC = () => {
@@ -7,7 +9,7 @@ const Tab2: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab 2</IonTitle>
+          <IonTitle>Temperature</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
@@ -17,6 +19,14 @@ const Tab2: React.FC = () => {
           </IonToolbar>
         </IonHeader>
         <ExploreContainer name="Tab 2 page" />
+        <IonCard>
+      <IonCardHeader>
+        <IonCardTitle>Temperatura</IonCardTitle>
+        <IonCardSubtitle> 22ºC</IonCardSubtitle>
+      </IonCardHeader>
+
+      <IonCardContent>Fecha</IonCardContent>
+    </IonCard>
       </IonContent>
     </IonPage>
   );

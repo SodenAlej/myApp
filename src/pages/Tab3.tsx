@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab3.css';
 
@@ -7,7 +7,7 @@ const Tab3: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab 3</IonTitle>
+          <IonTitle>Agua</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
@@ -17,6 +17,14 @@ const Tab3: React.FC = () => {
           </IonToolbar>
         </IonHeader>
         <ExploreContainer name="Tab 3 page" />
+        <IonCard>
+      <IonCardHeader>
+        <IonCardTitle>Agua</IonCardTitle>
+        <IonCardSubtitle>Nivel de agua: </IonCardSubtitle>
+      </IonCardHeader>
+
+      <IonCardContent>Fecha</IonCardContent>
+    </IonCard>
       </IonContent>
     </IonPage>
   );
