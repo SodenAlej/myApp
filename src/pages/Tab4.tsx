@@ -1,13 +1,15 @@
 import { IonButton, IonContent, IonHeader, IonIcon, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab4.css';
-import { apertureOutline, apertureSharp, cloudDoneSharp, cloudSharp, rainySharp, star } from 'ionicons/icons';
+import { apertureOutline, apertureSharp, cloudDoneSharp, cloudSharp, leafOutline, rainySharp, star } from 'ionicons/icons';
 
 const Tab4: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
+        <IonIcon slot="start" icon={leafOutline}></IonIcon>
+
           <IonTitle>Acciones</IonTitle>
         </IonToolbar>
       </IonHeader>
@@ -23,7 +25,7 @@ const Tab4: React.FC = () => {
         Prender       
         </IonButton>
 
-      <IonButton color="dark" >
+      <IonButton color= "dark">
         Apagar        
         <IonIcon slot="end" icon={cloudSharp}></IonIcon>
       </IonButton>

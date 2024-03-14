@@ -1,13 +1,16 @@
-import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonContent, IonHeader, IonIcon, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab3.css';
+import { leafOutline } from 'ionicons/icons';
 
 const Tab3: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Agua</IonTitle>
+        <IonIcon slot="start" icon={leafOutline}></IonIcon>
+
+          <IonTitle>Planta</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
@@ -25,6 +28,15 @@ const Tab3: React.FC = () => {
 
       <IonCardContent>Fecha</IonCardContent>
     </IonCard>
+    <IonCard>
+      <IonCardHeader>
+        <IonCardTitle>Temperatura</IonCardTitle>
+        <IonCardSubtitle> 22ºC</IonCardSubtitle>
+      </IonCardHeader>
+
+      <IonCardContent>Fecha</IonCardContent>
+    </IonCard>
+    
       </IonContent>
     </IonPage>
   );
